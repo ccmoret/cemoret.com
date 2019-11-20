@@ -16,24 +16,13 @@ class Logos extends Component {
           <Link to={`/`}>
             <img
               src={
-                'https://firebasestorage.googleapis.com/v0/b/circular-7b402.appspot.com/o/images%2Fbrand%2Ficon.png?alt=media&token=baf7e77f-6b55-412a-a730-e32adbca6b1e'
+                'https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2FcafeteriaIndustrail-logo.png?alt=media&token=fe86b56b-9d8b-4996-bda9-830645037078'
               }
               className={`isotype`}
-              alt="Circular Isotype"
+              alt="Cafeteria Industrial Isotype"
             />
           </Link>
         </div>
-        {/* <div className="logo-header-right">
-          <Link to={`/`}>
-            <img
-              src={
-                'https://firebasestorage.googleapis.com/v0/b/circular-7b402.appspot.com/o/images%2Fbrand%2Flogo.png?alt=media&token=2b407a10-8d6e-410f-8fee-69ab5d89b381'
-              }
-              className={`logo`}
-              alt="Circular Logo"
-            />
-          </Link>
-        </div> */}
       </div>
     );
   }

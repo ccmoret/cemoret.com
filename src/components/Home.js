@@ -21,15 +21,15 @@ class Home extends Component {
       <div className="">
         <Logos />
         <div className="row m-0">
-          <div className="col-12 center">
-            <div className="text-center text-middle-40">
-              <Link to={`/`} activeClassName="active">
+          <div className="col-12 px-0">
+            <div className="text-center">
+              <Link to={`/`}>
                 <img
                   src={
-                    'https://firebasestorage.googleapis.com/v0/b/circular-7b402.appspot.com/o/images%2Fbrand%2Flogo.png?alt=media&token=2b407a10-8d6e-410f-8fee-69ab5d89b381'
+                    'https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fci1.jpg?alt=media&token=905bf0ae-431d-47ef-a828-1173430a91bf'
                   }
-                  className={`circular`}
-                  alt="Circular Logo"
+                  className={`img-100`}
+                  alt="cafeteria industrial"
                 />
               </Link>
             </div>

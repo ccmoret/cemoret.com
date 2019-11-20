@@ -6,7 +6,7 @@
 ========================================================================== */
 body {
   font-size: 16px;
-  background-color: #332e41 !important; }
+  background-color: #f2ea01 !important; }
 
 a {
   text-decoration: none !important;
@@ -116,17 +116,19 @@ text-nobrand:hover {
 
 .isotype {
   height: auto !important;
-  width: 30px !important; }
+  width: 40px !important; }
 
 .logo-header-left {
   position: fixed;
   left: 20px;
-  top: 20px; }
+  top: 20px;
+  z-index: 1 !important; }
 
 .logo-header-right {
   position: fixed;
   right: 20px;
-  top: 20px; }
+  top: 20px;
+  z-index: 1 !important; }
 
 .menu-font {
   font-size: 0.8em;
@@ -290,22 +292,9 @@ btn-link:focus {
   cursor: pointer !important;
   color: black; }
 
-.img {
+.img-100 {
   height: auto !important;
   width: 100% !important; }
-
-.img-100-over {
-  position: absolute !important;
-  height: 70%;
-  width: 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: auto;
-  margin-right: auto;
-  left: 25%;
-  top: calc(15vh) !important;
-  z-index: 1; }
 
 .logo-over {
   position: absolute !important;
