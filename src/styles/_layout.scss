@@ -360,8 +360,9 @@ btn-link:focus {
 // :IMAGE style
 
 .img-100 {
-  height: auto !important;
+  height: 100vh !important;
   width: 100% !important;
+  object-fit: cover;
 }
 
 .logo-over {

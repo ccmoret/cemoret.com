@@ -293,8 +293,9 @@ btn-link:focus {
   color: black; }
 
 .img-100 {
-  height: auto !important;
-  width: 100% !important; }
+  height: 100vh !important;
+  width: 100% !important;
+  object-fit: cover; }
 
 .logo-over {
   position: absolute !important;
