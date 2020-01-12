@@ -1,6 +1,5 @@
 $color-brand: #1a73e8; // Brand Color
-$color-brand-bg: #e7f0fe; //
-$color-text: #484848; // Text Grey
+$color-text: #323232; // Text Grey
 $color-background: #fff;
 $white: #fff;
 $black: #000;
@@ -14,10 +13,12 @@ $color-5: #fafafa; // Content Workshop & Backgruond Menu
 $color-5A: #f2f2f2;
 $color-6: #efefef; // Light Grey
 
-$font-1: 'Open Sans' !important, 'Heebo', sans-serif;
-$font-2: 'Frank Ruhl Libre', sans-serif;
+$font-mono-g: 'Inconsolata', monospace;
+$font-mono: 'SuisseIntlMono', 'Helvetica', sans-serif;
+$font: 'Suisse Int_l', 'Helvetica', sans-serif;
 
-$light: 200 !important;
-$regular: 400 !important;
-$medium: 600 !important;
-$bold: 700 !important;
+$light: 200;
+$book: 350;
+$regular: 400;
+$medium: 500;
+$bold: 700;
