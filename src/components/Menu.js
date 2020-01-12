@@ -31,7 +31,7 @@ class Menu extends Component {
                   </Link>
                 </li>
                 <li className="h4 px-2">
-                  <Link to={`/eat`}>Eat</Link>
+                  <Link to={`/eat`}>Eat </Link>
                 </li>
               </ul>
             </div>

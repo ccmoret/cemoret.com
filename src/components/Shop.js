@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 // Components
 import Menu from './Menu';
 import Footer from './Footer';
-// import Product from './Product';
 
 class Shop extends Component {
   constructor(props) {
@@ -101,20 +100,23 @@ class Shop extends Component {
   render() {
     const { product } = this.state;
     return (
-      <div className="container">
+      <div className="app_scroll">
         <Menu />
         <div className="row pt-80">
-          <div className="col-md-6 col-12 box px-0">{this.renderProductsList(product)}</div>
-          <div className="col-md-6 col-12 box px-0">
-            <h3 className="box m-0 p-3">Tienda | ショップ</h3>
-            <h2 className="m-0 p-3">
+          <div className="col-md-6 col-12 order-last box px-0" id="left">
+            {this.renderProductsList(product)}
+          </div>
+          <div className="col-md-6 col-12 order-first box px-0" id="right">
+            <h3 className="box m-0 p-3">Shop | Tienda | ショップ</h3>
+            <h3 className="m-0 p-3">
               Curioseamos entre las recetas más diversas, cocinamos con los ingredientes más
               dispares e improvisamos con las ideas más locas.
-            </h2>
+            </h3>
           </div>
         </div>
-
-        <Footer />
+        <div className="fixedbutton">
+          <Footer />
+        </div>
       </div>
     );
   }
