@@ -807,9 +807,6 @@ input[type='text'] {
 }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
   .hide-sm {
     display: none;
   }
@@ -899,9 +896,6 @@ input[type='text'] {
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
   .hide-md {
     display: none !important;
   }
@@ -910,6 +904,13 @@ input[type='text'] {
   }
   .px-5 {
     padding: 3em 0 !important;
+  }
+  .text-center-md {
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  .fixedbutton {
+    position: relative;
   }
 }
 
@@ -990,9 +991,6 @@ input[type='text'] {
 }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
   .hide-lg {
     display: none;
   }
@@ -1075,9 +1073,6 @@ input[type='text'] {
 }
 
 @media (max-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
   .hide-xl {
     display: none;
   }

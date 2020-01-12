@@ -670,8 +670,6 @@ input[type='text'] {
   padding-left: 3em !important; }
 
 @media (max-width: 576px) {
-  .container {
-    max-width: 540px; }
   .hide-sm {
     display: none; }
   .slider {
@@ -741,14 +739,17 @@ input[type='text'] {
     max-width: 100%; } }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 720px; }
   .hide-md {
     display: none !important; }
   .p-5 {
     padding: 5px !important; }
   .px-5 {
-    padding: 3em 0 !important; } }
+    padding: 3em 0 !important; }
+  .text-center-md {
+    text-align: center !important;
+    padding: 0 !important; }
+  .fixedbutton {
+    position: relative; } }
 
 @media (min-width: 768px) {
   .col-md {
@@ -812,8 +813,6 @@ input[type='text'] {
     max-width: 100%; } }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 960px; }
   .hide-lg {
     display: none; } }
 
@@ -879,8 +878,6 @@ input[type='text'] {
     max-width: 100%; } }
 
 @media (max-width: 1200px) {
-  .container {
-    max-width: 1140px; }
   .hide-xl {
     display: none; } }
 
