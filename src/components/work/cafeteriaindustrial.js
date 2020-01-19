@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 // Components
 import Menu from "../Menu";
-// import Footer from './Footer';
+import Footer from "../Footer";
 
 class CafeteriaIndustrial extends Component {
 	constructor(props) {
@@ -27,7 +27,11 @@ class CafeteriaIndustrial extends Component {
 		return (
 			<div className="container">
 				<div className="pb-5">
-					<Menu work={`follow the forest 2/15`} />
+					<Menu
+						back={`/`}
+						work={`cafeteria industrial 14/15`}
+						foward={`/carlosmoret`}
+					/>
 				</div>
 				<div className="row pt-5 px-2">
 					<div className="col-12 px-1 pt-5">
@@ -93,7 +97,7 @@ class CafeteriaIndustrial extends Component {
 						/>
 					</div>
 				</div>
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 		);
 	}

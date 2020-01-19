@@ -216,11 +216,8 @@ class WorkBlocks extends Component {
 		const { work } = this.state;
 		return (
 			<div className="container">
-				<div className="pb-3">
-					<Menu controls={`swichback`} link={`/work`} />
-				</div>
-
-				<div className="row px-0">
+				<Menu controls={`swichback`} link={`/work`} work={`list`} />
+				<div className="row px-0 pt-5">
 					<div className="col-12 px-1">{this.renderImageBlocks(work)}</div>
 				</div>
 				{/* <Footer /> */}

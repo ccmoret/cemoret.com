@@ -1,43 +1,70 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 // Components
 
 class Footer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+	constructor(props) {
+		super(props);
+		this.state = {};
+	}
 
-  render() {
-    return (
-      <footer>
-        <div className="row py-2">
-          <div className="col-md-3 col-12 text-center-md pl-5">
-            <Link to={`/`}>
-              <h5>Process</h5>
-            </Link>
-            <Link to={`/`}>
-              <h5>About</h5>
-            </Link>
-          </div>
-          <div className="col-md-6 col-12 text-center">
-            <h5 className="bold">CAFETERIA INDUSTRIAL</h5>
-            <h5>Carrer de Pallars, 154, 08005 Barcelona / Telf: 930 27 71 49</h5>
-          </div>
-          <div className="col-md-3 col-12 text-right text-center-md pr-5">
-            <h5>Eng/Esp/Cat</h5>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.instagram.com/cafeteriaindustrial">
-              <h5>Instagram</h5>
-            </a>
-          </div>
-        </div>
-      </footer>
-    );
-  }
+	render() {
+		return (
+			<footer>
+				<div className="row p-1 pb-3">
+					<div className="col-12 px-1 pt-5">
+						<hr className="" />
+					</div>
+					<div className="col-4 px-1">
+						<a
+							href="mailto:cemoret@gmail.com?Subject=Hello%20Carlos%20from%20Portfolio"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<h5 className="m-0">© Carlos Moret</h5>
+						</a>
+						<a
+							href="mailto:cemoret@gmail.com?Subject=Hello%20Carlos%20from%20Portfolio"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<h5 className="m-0"> cemoret@gmail.com</h5>
+						</a>
+					</div>
+					<div className="col-4 px-1">
+						<a
+							href="https://github.com/cemoret"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<h5 className="m-0">Github</h5>
+						</a>
+						<a
+							href="https://www.instagram.com/cemoret/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<h5 className="m-0">Instagram</h5>
+						</a>
+						<a
+							href="https://twitter.com/carlosmoret"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<h5 className="m-0">Twitter</h5>
+						</a>
+					</div>
+					<div className="col-4 px-1">
+						<Link to={`/`}>
+							<h5 className="m-0">T (+34) 674 960 794</h5>
+						</Link>
+						<h5 className="m-0">All rights reserved.</h5>
+					</div>
+				</div>
+			</footer>
+		);
+	}
 }
 
 export default Footer;

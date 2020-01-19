@@ -153,9 +153,15 @@ text-nobrand:hover {
 }
 
 .isotype {
-  height: auto !important;
-  max-width: 55px !important;
-  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+}
+
+.isotype-system {
+  width: 70px;
+  height: 70px;
+  padding: 0;
 }
 
 .pt-80 {
@@ -176,10 +182,6 @@ text-nobrand:hover {
 
 .menu {
   position: fixed;
-  // outline: 1px solid black;
-  // background-color: white;
-  height: 80px;
-  line-height: 80px;
   width: 100%;
   z-index: 1;
 }
@@ -263,9 +265,6 @@ text-nobrand:hover {
 }
 
 footer {
-  background-color: white;
-  outline: 1px solid black;
-  height: 80px;
   width: 100%;
   z-index: 1;
 }
@@ -486,6 +485,8 @@ input[type='text'] {
   height: 32px;
   padding: 0;
 }
+
+
 
 .link-button {
   border: 0 $color-background !important;
@@ -908,6 +909,26 @@ input[type='text'] {
 .pl-5,
 .px-5 {
   padding-left: 3em !important;
+}
+
+.pt-10,
+.py-10 {
+  padding-top: 6em !important;
+}
+
+.pb-10,
+.py-10 {
+  padding-bottom: 6em !important;
+}
+
+.pt-15,
+.py-15 {
+  padding-top: 9em !important;
+}
+
+.pb-15,
+.py-15 {
+  padding-bottom: 9em !important;
 }
 
 .order-first {

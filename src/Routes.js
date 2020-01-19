@@ -7,6 +7,7 @@ import Work from "./components/Work";
 import WorkBlocks from "./components/WorkBlocks";
 import About from "./components/About";
 import FollowTheForest from "./components/work/followtheforest";
+import CarlosMoret from "./components/work/carlosmoret";
 import CafeteriaIndustrial from "./components/work/cafeteriaindustrial";
 
 export default () => {
@@ -23,6 +24,7 @@ export default () => {
 					path="/cafeteriaindustrial"
 					component={CafeteriaIndustrial}
 				/>
+				<Route exact path="/carlosmoret" component={CarlosMoret} />
 			</Switch>
 		</div>
 	);

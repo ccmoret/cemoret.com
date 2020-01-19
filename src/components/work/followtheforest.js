@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 // Components
 import Menu from "../Menu";
-// import Footer from './Footer';
+import Footer from "../Footer";
 
 class FollowTheForest extends Component {
 	constructor(props) {
@@ -27,7 +27,11 @@ class FollowTheForest extends Component {
 		return (
 			<div className="container">
 				<div className="pb-5">
-					<Menu work={`follow the forest 2/15`} />
+					<Menu
+						back={`/carlosmoret`}
+						work={`follow the forest 1/15`}
+						foward={`/`}
+					/>
 				</div>
 				<div className="row pt-5 px-2">
 					<div className="col-12 px-1 pt-5">
@@ -92,7 +96,7 @@ class FollowTheForest extends Component {
 						/>
 					</div>
 				</div>
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 		);
 	}

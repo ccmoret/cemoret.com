@@ -26,11 +26,10 @@ class About extends Component {
 		const { name, img1, img2, img3 } = this.state.me;
 		return (
 			<div className="container">
-				<div className="pb-5">
-					<Menu />
-				</div>
-				<div className="row pt-5 px-2">
-					<div className="col-12 pt-5 px-1">
+				<Menu />
+
+				<div className="row pt-15 px-2">
+					<div className="col-12 px-1">
 						<hr />
 					</div>
 					<div className="col-9 px-1 py-1">

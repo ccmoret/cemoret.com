@@ -12,6 +12,18 @@ class Work extends Component {
 			status: 0,
 			work: [
 				{
+					name: `Carlos Moret`,
+					link: `/carlosmoret`,
+					field: `Portfolio`,
+					color: `#000`,
+					backgroundColor: `#ffffff`,
+					description: `Proyecto de Master ELISAVA realizado terminado a principios de 2020 en la que se implemento metodologias UX y UI`,
+					team: `UX / UI / Code : Alejandro de Francisco Castillo / Paula Rufi / Maria Camila / Carlos Moret`,
+					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_01.jpg?alt=media&token=1642a1ed-0670-435a-b835-828f227c2d6c`,
+					img2: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
+					img3: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`
+				},
+				{
 					name: `Cafeteria Industrial`,
 					link: `/cafeteriaindustrial`,
 					field: `Technology`,
@@ -209,7 +221,7 @@ class Work extends Component {
 									color: `${work[status].color}`
 								}}
 							>
-								{pad(14 - index)}.
+								{pad(15 - index)}.
 							</h3>
 						</div>
 						<div className="col-4 p-1">
@@ -285,11 +297,9 @@ class Work extends Component {
 				}}
 				className="container"
 			>
-				<div className="pb-3">
-					<Menu controls={`swich`} link={`/workblocks`} />
-				</div>
+				<Menu controls={`swich`} link={`/workblocks`} work={`blocks`} />
 
-				<div className="row px-0">
+				<div className="row px-0 pt-5">
 					<div className="col-12 px-2">
 						<hr />
 					</div>
