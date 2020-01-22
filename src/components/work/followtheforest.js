@@ -29,7 +29,8 @@ class FollowTheForest extends Component {
 				<div className="pb-5">
 					<Menu
 						back={`/carlosmoret`}
-						work={`follow the forest 1/15`}
+						work={`follow the forest`}
+						worknumber={`1/15`}
 						foward={`/`}
 					/>
 				</div>
@@ -97,6 +98,7 @@ class FollowTheForest extends Component {
 					</div>
 				</div>
 				<Footer />
+				<div className="pb-5 d-md-none"></div>
 			</div>
 		);
 	}

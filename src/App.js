@@ -1,31 +1,45 @@
-import './styles/styles.css';
+import "./styles/styles.css";
 
-import React, { Component } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Routes from './Routes';
-import './App.css';
-import ScrollToTop from './ScrollToTop';
+import React, { Component, Fragment } from "react";
+import MyProvider from "./MyProvider";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./Routes";
+import "./App.css";
+import ScrollToTop from "./ScrollToTop";
+import MyContext from "./MyContext";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+	constructor(props) {
+		super(props);
 
-    this.state = { prevPage: '' };
-  }
+		this.state = { prevPage: "" };
+	}
 
-  render() {
-    return (
-      <div>
-        <Router>
-          <div>
-            <ScrollToTop>
-              <Routes />
-            </ScrollToTop>
-          </div>
-        </Router>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div>
+				<MyProvider>
+					<Router>
+						<MyContext.Consumer>
+							{context => (
+								<Fragment>
+									<div
+										className={
+											context.state.changeColor ? `normal` : `changeColor`
+										}
+									>
+										<ScrollToTop>
+											<Routes />
+										</ScrollToTop>
+									</div>
+								</Fragment>
+							)}
+						</MyContext.Consumer>
+					</Router>
+				</MyProvider>
+			</div>
+		);
+	}
 }
 
 export default App;

@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Link } from "react-router-dom";
+import MyContext from "../MyContext";
 
 // Components
 import Menu from "./Menu";
@@ -9,189 +10,7 @@ class Work extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			status: 0,
-			work: [
-				{
-					name: `Carlos Moret`,
-					link: `/carlosmoret`,
-					field: `Portfolio`,
-					color: `#000`,
-					backgroundColor: `#ffffff`,
-					description: `Proyecto de Master ELISAVA realizado terminado a principios de 2020 en la que se implemento metodologias UX y UI`,
-					team: `UX / UI / Code : Alejandro de Francisco Castillo / Paula Rufi / Maria Camila / Carlos Moret`,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_01.jpg?alt=media&token=1642a1ed-0670-435a-b835-828f227c2d6c`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`
-				},
-				{
-					name: `Cafeteria Industrial`,
-					link: `/cafeteriaindustrial`,
-					field: `Technology`,
-					color: `#000`,
-					backgroundColor: `#F8D248`,
-					description: `Proyecto de Master ELISAVA realizado terminado a principios de 2020 en la que se implemento metodologias UX y UI`,
-					team: `UX / UI / Code : Alejandro de Francisco Castillo / Paula Rufi / Maria Camila / Carlos Moret`,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_01.jpg?alt=media&token=1642a1ed-0670-435a-b835-828f227c2d6c`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`
-				},
-				{
-					name: `Circular`,
-					link: `/followtheforest`,
-					field: `Technology`,
-					color: `#fff`,
-					backgroundColor: `#3C00FF`,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img3: ``
-				},
-				{
-					name: `The SaMy Company`,
-					link: `/followtheforest`,
-					field: `Technology`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`
-				},
-				{
-					name: `Suuper`,
-					link: `/followtheforest`,
-					field: `Technology`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Public FC`,
-					link: `/followtheforest`,
-					field: `Sport`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `A2 pass de la scene`,
-					link: `/followtheforest`,
-					field: `Music`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Porta`,
-					link: `/followtheforest`,
-					field: `Migration`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Ram`,
-					link: `/followtheforest`,
-					field: `Food`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Capu`,
-					link: `/followtheforest`,
-					field: `Fashion`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Revolver`,
-					link: `/followtheforest`,
-					field: `Food`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Hooleap`,
-					link: `/followtheforest`,
-					field: `Education`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Barra Chocolate`,
-					link: `/followtheforest`,
-					field: `Food`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Mercado nun`,
-					link: `/followtheforest`,
-					field: `Food`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: ``,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				},
-				{
-					name: `Follow the Forest`,
-					link: `/followtheforest`,
-					field: `Fashion`,
-					color: `#000000`,
-					backgroundColor: ``,
-					description: `Follow the Forest was a new clothing rental brand back in 2015 that combine the streetwear trend that was starting in Chile.`,
-					team: ``,
-					img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/cafeteriaindustrial%2Fcafeteria_industrial_02.jpg?alt=media&token=076434e2-280b-47f0-9409-d3aa44e01674`,
-					img2: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct01.jpg?alt=media&token=7fa8f2ad-7bb3-4308-baef-c521fc0185fa`,
-					img3: `https://firebasestorage.googleapis.com/v0/b/cafeteria-industrial.appspot.com/o/images%2Fproducts%2Fproduct09.jpg?alt=media&token=f674fb73-5d19-418f-9c1f-d21411cb8b61`
-				}
-			]
+			index: 0
 		};
 	}
 
@@ -199,7 +18,7 @@ class Work extends Component {
 		window.addEventListener("scroll", this.listenScrollEvent);
 	}
 
-	renderProjectsList(status, work) {
+	renderProjectsList(work) {
 		function pad(d) {
 			return d < 10 ? "0" + d.toString() : d.toString();
 		}
@@ -207,42 +26,18 @@ class Work extends Component {
 			return (
 				<Link to={`${link}`} key={index}>
 					<div
-						onMouseEnter={() => this.changeStatus(index)}
+						onMouseEnter={() => this.changeIndex(index)}
 						// style={{ cursor: `url(${img}) , auto` }}
 						className="row link"
-						style={{
-							color: `${work[status].color}`
-						}}
 					>
 						<div className="col-2 p-1">
-							<h3
-								className="m-0"
-								style={{
-									color: `${work[status].color}`
-								}}
-							>
-								{pad(15 - index)}.
-							</h3>
+							<h3 className="m-0">{pad(15 - index)}.</h3>
 						</div>
-						<div className="col-4 p-1">
-							<h3
-								className="m-0"
-								style={{
-									color: `${work[status].color}`
-								}}
-							>
-								{name}
-							</h3>
+						<div className="col-md-4 col-sm-6 col-10 p-1">
+							<h3 className="m-0">{name}</h3>
 						</div>
-						<div className="col-6 p-1">
-							<h3
-								className="m-0"
-								style={{
-									color: `${work[status].color}`
-								}}
-							>
-								{field}
-							</h3>
+						<div className="col-md-6 col-4 d-none d-sm-block p-1">
+							<h3 className="m-0">{field}</h3>
 						</div>
 					</div>
 				</Link>
@@ -250,14 +45,13 @@ class Work extends Component {
 		});
 	}
 
-	changeStatus = index => {
-		this.setState({ status: index });
+	changeIndex = index => {
+		this.setState({ index: index });
 	};
 
 	renderProjectsImages(work) {
-		const { status } = this.state;
-
-		if (status === null) {
+		const { index } = this.state;
+		if (index === null) {
 			return (
 				<div className="row h-100 py-1">
 					<div className="col-12">Hola</div>
@@ -268,16 +62,16 @@ class Work extends Component {
 				<div className="row h-100 py-1">
 					<div className="col-6 px-1">
 						<img
-							src={work[status].img1}
+							src={work[index].img1}
 							className="img-onMouseEnter"
-							alt={work[status].name}
+							alt={work[index].name}
 						/>
 					</div>
 					<div className="col-6 px-1">
 						<img
-							src={work[status].img1}
+							src={work[index].img1}
 							className="img-onMouseEnter"
-							alt={work[status].name}
+							alt={work[index].name}
 						/>
 					</div>
 				</div>
@@ -285,13 +79,13 @@ class Work extends Component {
 		}
 	}
 
-	render() {
-		const { work, status } = this.state;
+	renderList(work) {
+		const { index } = this.state;
 		return (
 			<div
 				style={{
-					backgroundColor: `${work[status].backgroundColor}`,
-					color: `${work[status].color} !important`,
+					backgroundColor: `${work[index].backgroundColor}`,
+					color: `${work[index].color} !important`,
 					zIndex: `-100`,
 					transition: `background-color 0.5s ease-out`
 				}}
@@ -303,13 +97,78 @@ class Work extends Component {
 					<div className="col-12 px-2">
 						<hr />
 					</div>
-					<div className="col-12 px-2">
-						{this.renderProjectsList(status, work)}
+					<div className="col-12 px-2">{this.renderProjectsList(work)}</div>
+					<div className="col-12 d-none d-sm-block px-1">
+						{this.renderProjectsImages(work)}
 					</div>
-					<div className="col-12 px-1">{this.renderProjectsImages(work)}</div>
 				</div>
 				{/* <Footer /> */}
+				<div className="pb-5 d-md-none"></div>
 			</div>
+		);
+	}
+
+	changeIndex = index => {
+		this.setState({ index: index });
+	};
+
+	renderImageBlocks(work) {
+		return <div className="row">{this.renderImage(work)}</div>;
+	}
+
+	renderImage(work) {
+		return work.map(({ link, col, imgcss, img1 }, index) => {
+			return (
+				<div key={index} className={`${col} p-1`}>
+					<Link to={link}>
+						<div
+							className={imgcss}
+							style={{
+								backgroundImage: `url(${img1})`
+							}}
+						/>
+					</Link>
+				</div>
+			);
+		});
+	}
+
+	renderBlocks(work) {
+		return (
+			<div className="container">
+				<Menu controls={`swichback`} link={`/work`} work={`list`} />
+				<div className="row px-0 pt-5">
+					<div className="col-12 px-1">{this.renderImageBlocks(work)}</div>
+				</div>
+				{/* <Footer /> */}
+				<div className="pb-5 d-md-none"></div>
+			</div>
+		);
+	}
+
+	renderWorks(status, work) {
+		if (status === 0) {
+			return <div>{this.renderList(work)}</div>;
+		} else {
+			return (
+				<div>
+					<div>{this.renderBlocks(work)}</div>
+				</div>
+			);
+		}
+	}
+
+	render() {
+		return (
+			<MyContext.Consumer>
+				{context => (
+					<Fragment>
+						<div>
+							{this.renderWorks(context.state.status, context.state.work)}
+						</div>
+					</Fragment>
+				)}
+			</MyContext.Consumer>
 		);
 	}
 }

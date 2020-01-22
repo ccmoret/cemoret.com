@@ -29,7 +29,8 @@ class CafeteriaIndustrial extends Component {
 				<div className="pb-5">
 					<Menu
 						back={`/`}
-						work={`cafeteria industrial 14/15`}
+						work={`cafeteria industrial`}
+						worknumber={`14/15`}
 						foward={`/carlosmoret`}
 					/>
 				</div>
@@ -98,6 +99,7 @@ class CafeteriaIndustrial extends Component {
 					</div>
 				</div>
 				<Footer />
+				<div className="pb-5 d-md-none"></div>
 			</div>
 		);
 	}

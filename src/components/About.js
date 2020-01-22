@@ -24,6 +24,7 @@ class About extends Component {
 
 	render() {
 		const { name, img1, img2, img3 } = this.state.me;
+
 		return (
 			<div className="container">
 				<Menu />
@@ -32,7 +33,7 @@ class About extends Component {
 					<div className="col-12 px-1">
 						<hr />
 					</div>
-					<div className="col-9 px-1 py-1">
+					<div className="col-md-9 col-12 px-1 py-1">
 						<h2 className="m-0">
 							Based in Barcelona and working worldwide, I focuses on all phases
 							of a product, from discovery to delivery and iteration, and helps
@@ -42,7 +43,7 @@ class About extends Component {
 					<div className="col-12 px-1 pt-5">
 						<hr className="pt-5" />
 					</div>
-					<div className="col-3 px-1">
+					<div className="col-md-3 col-6 px-1 pb-5">
 						<h5 className="m-0">Technologies:</h5>
 						<h5 className="m-0">NodeJS</h5>
 						<h5 className="m-0">Express</h5>
@@ -57,7 +58,7 @@ class About extends Component {
 						<h5 className="m-0">Swift</h5>
 						<h5 className="m-0">Unix Terminal</h5>
 					</div>
-					<div className="col-3 px-1">
+					<div className="col-md-3 col-6 px-1">
 						<h5 className="m-0">Software:</h5>
 						<h5 className="m-0">Atom</h5>
 						<h5 className="m-0">Sketch App</h5>
@@ -68,7 +69,7 @@ class About extends Component {
 						<h5 className="m-0">Lightroom</h5>
 						<h5 className="m-0">Xcode</h5>
 					</div>
-					<div className="col-3 px-1">
+					<div className="col-md-3 col-6 px-1">
 						<h5 className="m-0">Services:</h5>
 						<h5 className="m-0">Art Direction</h5>
 						<h5 className="m-0">Naming</h5>
@@ -79,7 +80,7 @@ class About extends Component {
 						<h5 className="m-0">Packaging</h5>
 						<h5 className="m-0">Photography</h5>
 					</div>
-					<div className="col-3 px-1">
+					<div className="col-md-3 col-6 px-1 d-none d-md-block">
 						<h5 className="m-0">Representation:</h5>
 						<h5 className="m-0 pt-2">Spain</h5>
 						<h5 className="m-0">Belen Newman</h5>
@@ -132,6 +133,7 @@ class About extends Component {
 					</div>
 				</div>
 				{/* <Footer /> */}
+				<div className="pb-5 d-md-none"></div>
 			</div>
 		);
 	}
