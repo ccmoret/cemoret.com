@@ -11,9 +11,9 @@ class About extends Component {
 		this.state = {
 			me: {
 				name: `Carlos Moret`,
-				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/about%2Fsleepyhead-perdiz-by-querida-01.jpg?alt=media&token=ac1963d5-4762-4dde-bbb4-a9b05d43fe85`,
-				img2: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/about%2Fsleepyhead-perdiz-by-querida-06.jpg?alt=media&token=aba17642-3d22-48c6-8721-0a15df22b586`,
-				img3: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/about%2Fmacba-the-hermetic-bell-querida-45.jpg?alt=media&token=d161abbc-74a1-4506-9356-af1eccecd474`
+				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/about%2Fcemoret1.jpg?alt=media&token=b3f442a5-097f-4694-8bca-08a29a9c73e6`,
+				img2: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/about%2Fcemoret2.jpg?alt=media&token=bf9094aa-f0b9-4c61-b344-86a857e19f71`,
+				img3: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/about%2Fcemoret3.jpg?alt=media&token=01acee4e-5427-448f-871d-e3eb7531d3eb`
 			}
 		};
 	}
@@ -105,9 +105,9 @@ class About extends Component {
 				</div>
 				<div className="row p-1 pt-5">
 					<div className="col-12 px-1">
-						<h6>{name.toUpperCase()}</h6>
+						<h5>{name.toUpperCase()}</h5>
 					</div>
-					<div className="col-4 p-1">
+					<div className="col-sm-4 col-12 p-1">
 						<div
 							className="img-work-v"
 							style={{
@@ -115,7 +115,7 @@ class About extends Component {
 							}}
 						/>
 					</div>
-					<div className="col-4 p-1">
+					<div className="col-sm-4 col-12  p-1">
 						<div
 							className="img-work-v"
 							style={{
@@ -123,7 +123,7 @@ class About extends Component {
 							}}
 						/>
 					</div>
-					<div className="col-4 p-1">
+					<div className="col-sm-4 col-12  p-1">
 						<div
 							className="img-work-v"
 							style={{

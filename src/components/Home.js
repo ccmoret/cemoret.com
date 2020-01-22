@@ -19,7 +19,7 @@ class Home extends Component {
 	renderImages(link, images) {
 		return images.map(({ col, imgcss, image }, index) => {
 			return (
-				<div key={index} className={`${col} p-1 pb-15`}>
+				<div key={index} className={`${col} p-1 pb-15m`}>
 					<Link to={link}>
 						<div
 							className={imgcss}
@@ -34,7 +34,7 @@ class Home extends Component {
 	}
 
 	renderProjects(work) {
-		return work.map(({ name, feature, field, link, images }, index) => {
+		return work.map(({ name, feature, field, year, link, images }, index) => {
 			if (feature === 1) {
 				return (
 					<div className="row py-1" key={index}>
@@ -45,7 +45,7 @@ class Home extends Component {
 							<h5 className="m-0">{name}</h5>
 						</div>
 						<div className="col-4 px-1 py-1">
-							<h5 className="m-0">{field}</h5>
+							<h5 className="m-0">{year}</h5>
 						</div>
 						<div className="col-4 px-1 py-1">
 							<h5 className="m-0">{field}</h5>

@@ -20,7 +20,7 @@ body {
 
 a {
   text-decoration: none !important;
-  color: black !important;
+  color: $color-brand !important;
 }
 
 input:focus {
@@ -133,13 +133,13 @@ h6 {
 
 hr {
   border: none;
-  border-bottom: 1px solid $black !important;
+  border-bottom: 1px solid $color-brand !important;
 }
 
 .text-nobrand,
 text-nobrand:active,
 text-nobrand:hover {
-  color: $black !important;
+  color: $color-brand !important;
 }
 
 .logo {
@@ -164,7 +164,14 @@ text-nobrand:hover {
   padding: 0;
 }
 
+.macintosh {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+
 .isotype-face {
+  cursor: pointer;
   width: 35px;
   height: 35px;
   padding: 0;
@@ -172,7 +179,15 @@ text-nobrand:hover {
 }
 
 .isotype-face  {
+  cursor: pointer;
   animation: spinner 1s;
+}
+
+.isotype-face-loop  {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  animation: spinner 2s infinite;
 }
 
 
@@ -195,9 +210,36 @@ text-nobrand:hover {
 
  @keyframes changeColor {
   0%   {background-color: #9bd6fb;}
-  25%  {background-color: #fcef9a;}
-  50%  {background-color: #f2a3c7;}
-  100% {background-color: #76be93;}
+  10%  {background-color: #fcef9a;}
+  25%  {background-color: #f2a3c7;}
+  50% {background-color: #76be93;}
+  75%  {background-color: #f2a3c7;}
+  90%  {background-color: #fcef9a;}
+  100%   {background-color: #9bd6fb;}
+}
+
+.circle-color{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: solid 3px $black;
+  animation: changeColor 100s infinite;
+}
+
+.circle-color-loop{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  border: solid 3px $black;
+  animation: changeColor 50s infinite;
+}
+
+.rectangle-grey{
+  width: 100%;
+  height: 10vh;
+  background-color: $grey;
+  // border: solid 3px $grey;
+  // animation: changeColor 100s infinite;
 }
 
 .pt-80 {
@@ -328,6 +370,10 @@ footer {
   text-decoration: underline;
 }
 
+.link-underline, .link-underline:hover {
+  text-decoration: underline !important;
+}
+
 .logo-header-left {
   position: fixed;
   left: 20px;
@@ -372,7 +418,7 @@ button {
 }
 
 button:hover {
-  background-color: black;
+  background-color: $color-brand;
   color: white;
 }
 
@@ -423,7 +469,7 @@ button:focus {
 // Divitions
 
 .box {
-  outline: 1px solid black;
+  outline: 1px solid $color-brand;
 }
 // BASIC CSS CONFIG
 
@@ -441,7 +487,7 @@ ul {
 }
 
 ul li a {
-  color: black;
+  color: $color-brand;
   text-decoration: none;
 }
 
@@ -540,7 +586,7 @@ input[type='text'] {
   font-weight: $regular !important;
   font-size: 14px;
   cursor: pointer !important;
-  color: black;
+  color: $color-brand;
 }
 // :IMAGE style
 
@@ -977,6 +1023,10 @@ input[type='text'] {
   padding-bottom: 9em !important;
 }
 
+.pb-15m {
+  padding-bottom: 9em !important;
+}
+
 .order-first {
   -ms-flex-order: -1;
   order: -1;
@@ -1254,6 +1304,10 @@ input[type='text'] {
 
   .px-5 {
     padding: 3em 0 !important;
+  }
+
+  .pb-15m {
+    padding-bottom: 3em !important;
   }
 
   .text-center-md {

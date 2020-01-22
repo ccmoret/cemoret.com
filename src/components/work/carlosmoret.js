@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // Components
 import Menu from "../Menu";
@@ -23,7 +23,7 @@ class CarlosMoret extends Component {
 	}
 
 	render() {
-		const { name, img1, img2, img3 } = this.state.me;
+		// const { name, img1, img2, img3 } = this.state.me;
 		return (
 			<div className="container">
 				<div className="pb-5">
@@ -55,53 +55,124 @@ class CarlosMoret extends Component {
 						<hr className="pt-5" />
 					</div>
 					<div className="col-md-6 col-12 px-1">
-						<h5 className="m-0 pb-5">Portfolio</h5>
+						<h4 className="m-0 pb-5">Research paper</h4>
 					</div>
-					<div className="col-md-6 col-12 px-1">
+					<div className="col-md-6 col-12 px-1 pb-5">
 						<h5 className="m-0">
-							Clothing rental brand back in 2015 that combine the streetwear
-							trend that was starting in Chile. We were tasked with positioning
-							and naming, as well as developing a robust website exploration.
+							I am an engineer and designer, I have moved from one area to
+							another and I have mixed both areas so many times that I no longer
+							know where the line is between them. That is why I wanted to
+							capture this mix in the portfolio, blend the contemporary
+							editorial design with the basic and classic of the unix terminal
 						</h5>
 					</div>
-				</div>
-				<div className="row p-1 pt-5">
-					<div className="col-12 px-1">
-						<h6>{name.toUpperCase()}</h6>
-					</div>
-					<div className="col-md-4 col-12 p-1">
+					<div className="col-md-6 col-12 p-1">
 						<div
-							className="img-work-v"
+							className="img-work-h"
 							style={{
-								backgroundImage: `url(${img1})`
+								backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/portfolio%2F2.jpeg?alt=media&token=aa9bcb3a-c21f-4821-8c82-6e857b59e664)`
 							}}
 						/>
 					</div>
-					<div className="col-md-4 col-12 p-1">
+					<div className="col-md-6 col-12 p-1">
 						<div
-							className="img-work-v"
+							className="img-work-h"
 							style={{
-								backgroundImage: `url(${img2})`
-							}}
-						/>
-					</div>
-					<div className="col-md-4 col-12 p-1">
-						<div
-							className="img-work-v"
-							style={{
-								backgroundImage: `url(${img3})`
+								backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/portfolio%2FSUNDAY_No00_20.jpg?alt=media&token=ef28d8b2-7f67-4505-ab2b-68e9aae3aeb7)`
 							}}
 						/>
 					</div>
 
-					<div className="col-12 text-center px-1  pt-10 pb-1">
-						<h5 className="m-0">GUIDELINES</h5>
+					<div className="col-md-3 col-12 p-1 d-none d-md-block">
+						<div
+							className="img-work-v"
+							style={{
+								backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/portfolio%2Fportfolioref5.jpg?alt=media&token=f629ea02-5897-48d5-bdd0-d3f122c928d2)`
+							}}
+						/>
+					</div>
+
+					<div className="col-md-6 col-12 p-1">
+						<div
+							className="img-work-h"
+							style={{
+								backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/portfolio%2Fporfolioref1.jpg?alt=media&token=dfad8538-43a2-4e2d-a133-ae6a8c5398ee)`
+							}}
+						/>
+					</div>
+
+					<div className="col-md-3 col-12 p-1 d-none d-md-block">
+						<div
+							className="img-work-v"
+							style={{
+								backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/portfolio%2Fportfolioref2.jpg?alt=media&token=fe37fbb2-48ca-4419-a9bc-47448828db21)`
+							}}
+						/>
+					</div>
+					<div className="col-md-6 col-12 p-1">
+						<div
+							className="img-work-h"
+							style={{
+								backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/portfolio%2Fportfolioref11.jpg?alt=media&token=92ff653d-b85f-4b00-94de-cc1abac31b24)`
+							}}
+						/>
+					</div>
+
+					<div className="col-md-6 col-12 p-1">
+						<div
+							className="img-work-h"
+							style={{
+								backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/portfolio%2F1.jpeg?alt=media&token=37073259-d787-4b68-ac21-638aa65327f7)`
+							}}
+						/>
+					</div>
+				</div>
+
+				<div className="row p-1 pt-5">
+					<div className="col-12 text-center px-1 pt-10 pb-1">
+						<h6 className="m-0">GUIDELINES</h6>
 					</div>
 					<div className="col-12 px-1">
 						<hr className="" />
 					</div>
 					<div className="col-md-6 col-12 px-1">
-						<h5 className="m-0 pb-5">Color palette</h5>
+						<h4 className="m-0 pb-5">Logo</h4>
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h5 className="m-0">
+							The logo is a Macintosh computer, the first computer manufactured
+							and sold by Apple in January 1984. The logo that was designed very
+							simply like the iconography, works as a page favicon.
+						</h5>
+						<h5 className="m-0">
+							Both the logo-favicon and the icons are with white backgrond. This
+							small touch makes them stand out more when scrolling or is in
+							black background, delivering a more relaxed tone, which was not
+							possible without this small detail.
+						</h5>
+					</div>
+					<div className="col-md-6 col-12 px-1 pt-3 d-none d-md-block"></div>
+					<div className="col-md-6 col-12 px-1 pt-3">
+						<span className="px-0">
+							<img
+								className="macintosh"
+								src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Flogo.svg?alt=media&token=26ae105c-3661-4fda-9f82-6a9583e692dd"
+								alt="macintosh icon"
+							/>
+						</span>
+						<span className="px-0">
+							<img
+								className="macintosh"
+								src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Flogo-black.svg?alt=media&token=d6fb022c-7890-4b3b-bbac-18751e9289e7"
+								alt="macintosh-black icon"
+							/>
+						</span>
+					</div>
+					<div className="col-12 px-1 pt-5">
+						<hr className="pt-5" />
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h4 className="m-0 pb-5">Color palette</h4>
 					</div>
 					<div className="col-md-6 col-12 px-1">
 						<h5 className="m-0">
@@ -139,21 +210,90 @@ class CarlosMoret extends Component {
 									r="45"
 									stroke="black"
 									strokeWidth="3"
-									fill="#323232"
+									fill="#0E0E0E"
 								/>
 							</svg>
 							<div className="h5 m-0">Black</div>
-							<div className="h5 m-0">HEX #323232</div>
+							<div className="h5 m-0">HEX #0E0E0E</div>
 						</div>
 
 						<h5 className="m-0 pt-5 pb-3">Secundary Colors</h5>
+						<div className="inline-block px-2">
+							<svg height="100" width="100">
+								<circle
+									cx="50"
+									cy="50"
+									r="45"
+									stroke="black"
+									strokeWidth="3"
+									fill="#C4C4C4"
+								/>
+							</svg>
+							<div className="h5 m-0">Grey</div>
+							<div className="h5 m-0">HEX #C4C4C4</div>
+						</div>
+						<div className="inline-block px-2">
+							<svg height="100" width="100">
+								<circle
+									cx="50"
+									cy="50"
+									r="45"
+									stroke="black"
+									strokeWidth="3"
+									fill="#9bd6fb"
+								/>
+							</svg>
+							<div className="h5 m-0">Grey</div>
+							<div className="h5 m-0">HEX #9bd6fb</div>
+						</div>
+						<div className="inline-block px-2">
+							<svg height="100" width="100">
+								<circle
+									cx="50"
+									cy="50"
+									r="45"
+									stroke="black"
+									strokeWidth="3"
+									fill="#fcef9a"
+								/>
+							</svg>
+							<div className="h5 m-0">Grey</div>
+							<div className="h5 m-0">HEX #fcef9a</div>
+						</div>
+						<div className="inline-block px-2">
+							<svg height="100" width="100">
+								<circle
+									cx="50"
+									cy="50"
+									r="45"
+									stroke="black"
+									strokeWidth="3"
+									fill="#f2a3c7"
+								/>
+							</svg>
+							<div className="h5 m-0">Grey</div>
+							<div className="h5 m-0">HEX #f2a3c7</div>
+						</div>
+						<div className="inline-block px-2">
+							<svg height="100" width="100">
+								<circle
+									cx="50"
+									cy="50"
+									r="45"
+									stroke="black"
+									strokeWidth="3"
+									fill="#76be93"
+								/>
+							</svg>
+							<div className="h5 m-0">Grey</div>
+							<div className="h5 m-0">HEX #76be93</div>
+						</div>
 					</div>
-
 					<div className="col-12 px-1 pt-5">
 						<hr className="pt-5" />
 					</div>
 					<div className="col-md-6 col-12 px-1">
-						<h5 className="m-0 pb-5">Typography</h5>
+						<h4 className="m-0 pb-5">Typography</h4>
 					</div>
 					<div className="col-md-6 col-12 px-1">
 						<h5 className="m-0">Primary Typography: Fira Monospaced</h5>
@@ -176,17 +316,20 @@ class CarlosMoret extends Component {
 						<h3 className="m-0 pt-3">20 px - Fira Monospaced</h3>
 						<h4 className="m-0 pt-3">16 px - Fira Monospaced</h4>
 					</div>
-
 					<div className="col-12 px-1 pt-5">
 						<hr className="pt-5" />
 					</div>
 					<div className="col-md-6 col-12 px-1">
-						<h5 className="m-0 pb-5">Iconography</h5>
+						<h4 className="m-0 pb-5">Iconography</h4>
 					</div>
 					<div className="col-md-6 col-12 px-1">
 						<h5 className="m-0">
-							The iconography is connected to the main typography (Fira Mono) at
-							a fundamental level to maximize recognition and consistency.
+							The iconography is related to the Wingdings a dingbat fonts that
+							was originally developed by Microsoft in 1990, which generates an
+							aesthetic similar to what it was like to work on these operating
+							systems at that time, and so connected to the main typography
+							(Fira Mono) at a fundamental level to maximize recognition and
+							consistency.
 						</h5>
 						<h5 className="m-0 pt-3">
 							The icons were designed to generate curiosity in the user and
@@ -197,11 +340,11 @@ class CarlosMoret extends Component {
 						<h5 className="m-0 pt-3">
 							The icon system was generated with the combination of basic
 							geometric shapes (circles, triangles, squares and rectangles),
-							lines and points, and a thick line present in each of them.
+							lines and points, and a thick line present in all of them.
 						</h5>
 					</div>
-					<div className="col-md-6 col-12 px-1 pt-5 d-none d-md-block"></div>
-					<div className="col-md-6 col-12 px-1 pt-5">
+					<div className="col-md-6 col-12 px-1 pt-3 d-none d-md-block"></div>
+					<div className="col-md-6 col-12 px-1 pt-3">
 						<span className="px-2">
 							<img
 								className="isotype-system"
@@ -219,13 +362,13 @@ class CarlosMoret extends Component {
 						<span className="px-2">
 							<img
 								className="isotype-system"
-								src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fhappyfaca.svg?alt=media&token=989fbc71-2bfa-4702-8db7-d0616c9d46a3"
+								src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fhappyface.svg?alt=media&token=00a478d1-2b3a-48e9-81cf-f54f932b8c5d"
 								alt="happyface icon"
 							/>
 						</span>
 					</div>
-					<div className="col-md-6 col-12 px-1 pt-5 d-none d-md-block"></div>
-					<div className="col-md-6 col-12 px-1 pt-5">
+					<div className="col-md-6 col-12 px-1 pt-3 d-none d-md-block"></div>
+					<div className="col-md-6 col-12 px-1 pt-3">
 						<span className="px-2">
 							<img
 								className="isotype-system"
@@ -262,6 +405,191 @@ class CarlosMoret extends Component {
 								alt="cellphone icon"
 							/>
 						</span>
+					</div>
+					<div className="col-12 px-1 pt-5">
+						<hr className="pt-5" />
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h4 className="m-0 pb-3">Grid</h4>
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h5 className="m-0 pb-3">
+							The grid is a system of 12 modifiable columns according to the
+							content and that has 6 ways to use the content, the separation
+							between columns is 0.5em that corresponds to 8px. This 8px
+							separation makes the content almost 0 margin in the entire
+							project.
+						</h5>
+						<h5 className="m-0 pb-3">
+							The sample grid presented below is responsive and shows how
+							modifying the screen width works in different screen sizes
+						</h5>
+					</div>
+					<div className="col-12 px-0 pt-3">
+						<h5 className="m-0 pb-1 p-1">12 columns</h5>
+						<div className="row">
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-lg-1 col-md-2 col-sm-4 col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+						</div>
+						<h5 className="m-0 pt-3 pb-1 p-1">6 columns</h5>
+						<div className="row">
+							<div className="col-md-2 col-sm-4 col-12 p-1 pr-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-md-2 col-sm-4 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-md-2 col-sm-4 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-md-2 col-sm-4 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-md-2 col-sm-4 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-md-2 col-sm-4 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+						</div>
+						<h5 className="m-0 pt-3 pb-1 p-1">4 columns</h5>
+						<div className="row">
+							<div className="col-sm-3 col-12 p-1 pr-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-sm-3 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-sm-3 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-sm-3 col-12 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+						</div>
+						<h5 className="m-0 pt-3 pb-1 p-1">3 columns</h5>
+						<div className="row">
+							<div className="col-4 p-1 pr-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-4 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-4 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+						</div>
+						<h5 className="m-0 pt-3 pb-1 p-1">2 columns</h5>
+						<div className="row">
+							<div className="col-6 p-1 pr-1">
+								<div className="rectangle-grey"></div>
+							</div>
+							<div className="col-6 p-1">
+								<div className="rectangle-grey"></div>
+							</div>
+						</div>
+						<h5 className="m-0 pt-3 pb-1 p-1">1 column</h5>
+						<div className="row">
+							<div className="col-12 p-1 pr-1">
+								<div className="rectangle-grey"></div>
+							</div>
+						</div>
+					</div>
+					{/*<div className="col-12 px-1 pt-5">
+						<hr className="pt-5" />
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h4 className="m-0 pb-5">Composition</h4>
+					</div>*/}
+					<div className="col-12 px-1 pt-5">
+						<hr className="pt-5" />
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h4 className="m-0 pb-5">Motion</h4>
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h5 className="m-0 pb-3">
+							There are three motion elements incorporated into the project:
+						</h5>
+						<h5 className="m-0">
+							1. Happy face icon animation to get attention when browsing
+						</h5>
+						<h5 className="m-0">
+							2. Gradient between four colors in an infinite loop
+						</h5>
+						<h5 className="m-0">
+							3. Smooth transition in the&nbsp;
+							<span className="link-underline">
+								<Link to={`/work`}>work list</Link>
+							</span>
+						</h5>
+					</div>
+					<div className="col-md-6 col-12 px-1 pt-3 d-none d-md-block"></div>
+					<div className="col-md-6 col-12 px-1 pt-3">
+						<span className="px-2">
+							<img
+								className="isotype-face-loop"
+								src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fface.svg?alt=media&token=06620e07-5dcf-441e-b06a-887782764889"
+								alt="face icon"
+							/>
+						</span>
+						<span className="px-2 my-3">
+							<div className="inline-block circle-color-loop"></div>
+						</span>
+					</div>
+					{/*<div className="col-12 px-1 pt-5">
+						<hr className="pt-5" />
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h4 className="m-0 pb-5">Components</h4>
+					</div>*/}
+					<div className="col-12 px-1 pt-5">
+						<hr className="pt-5" />
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h4 className="m-0 pb-5">Tone of voice</h4>
+					</div>
+					<div className="col-md-6 col-12 px-1">
+						<h5 className="m-0">
+							In order to give more importance to the work, a simple and direct
+							tone of voice is generated, which speaks only when necessary,
+							without interrupting user navigation across all touchpoints
+						</h5>
+						<h6 className="m-0 pt-3">"Design something people want"</h6>
 					</div>
 				</div>
 				<Footer />

@@ -25,7 +25,7 @@ class App extends Component {
 								<Fragment>
 									<div
 										className={
-											context.state.changeColor ? `normal` : `changeColor`
+											context.state.changeColor ? `changeColor` : `normal`
 										}
 									>
 										<ScrollToTop>

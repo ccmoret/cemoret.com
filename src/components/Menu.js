@@ -12,26 +12,46 @@ class Menu extends Component {
 
 	componentDidMount() {}
 
-	renderMenuLeft(context) {
-		if (context.state.changeColor === false) {
-			return (
-				<img
-					onClick={() => context.onChangeColor()}
-					className="isotype-face"
-					src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fhappyface.svg?alt=media&token=00a478d1-2b3a-48e9-81cf-f54f932b8c5d"
-					alt="happyface icon"
-				/>
-			);
-		} else {
-			return (
-				<img
-					onClick={() => context.onChangeColor()}
-					className="isotype-face"
-					src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fface.svg?alt=media&token=06620e07-5dcf-441e-b06a-887782764889"
-					alt="face icon"
-				/>
-			);
-		}
+	renderMenuLeft() {
+		return (
+			<div>
+				<div className="d-none d-md-block">
+					<div className="float-left pr-2">
+						<NavLink exact to={`/`} activeClassName="current">
+							<h3 className="menu-link">HOME</h3>
+						</NavLink>
+					</div>
+					<div className="float-left px-2">
+						<NavLink to={`/work`} activeClassName="current">
+							<h3 className="menu-link">WORK</h3>
+						</NavLink>
+					</div>
+					<div className="float-left pl-2">
+						<NavLink to={`/about`} activeClassName="current">
+							<h3 className="menu-link">ABOUT</h3>
+						</NavLink>
+					</div>
+				</div>
+
+				<div className="row d-md-none menu-mobile" id="menublur">
+					<div className="col-4 px-2 text-left">
+						<NavLink exact to={`/`} activeClassName="current">
+							<h3 className="menu-link">HOME</h3>
+						</NavLink>
+					</div>
+					<div className="col-4 px-2 text-center">
+						<NavLink to={`/work`} activeClassName="current">
+							<h3 className="menu-link">WORK</h3>
+						</NavLink>
+					</div>
+					<div className="col-4 px-2 text-right">
+						<NavLink to={`/about`} activeClassName="current">
+							<h3 className="menu-link">ABOUT</h3>
+						</NavLink>
+					</div>
+				</div>
+			</div>
+		);
 	}
 
 	renderMenuCenter(work, worknumber, back, foward, link) {
@@ -95,46 +115,26 @@ class Menu extends Component {
 		);
 	}
 
-	renderMenuRight() {
-		return (
-			<div>
-				<div className="d-none d-md-block">
-					<div className="float-right px-2">
-						<NavLink to={`/about`} activeClassName="current">
-							<h3 className="menu-link">ABOUT</h3>
-						</NavLink>
-					</div>
-					<div className="float-right px-2">
-						<NavLink to={`/work`} activeClassName="current">
-							<h3 className="menu-link">WORK</h3>
-						</NavLink>
-					</div>
-					<div className="float-right pr-2">
-						<NavLink exact to={`/`} activeClassName="current">
-							<h3 className="menu-link">HOME</h3>
-						</NavLink>
-					</div>
-				</div>
-
-				<div className="row d-md-none menu-mobile" id="menublur">
-					<div className="col-4 px-2 text-left">
-						<NavLink exact to={`/`} activeClassName="current">
-							<h3 className="menu-link">HOME</h3>
-						</NavLink>
-					</div>
-					<div className="col-4 px-2 text-center">
-						<NavLink to={`/work`} activeClassName="current">
-							<h3 className="menu-link">WORK</h3>
-						</NavLink>
-					</div>
-					<div className="col-4 px-2 text-right">
-						<NavLink to={`/about`} activeClassName="current">
-							<h3 className="menu-link">ABOUT</h3>
-						</NavLink>
-					</div>
-				</div>
-			</div>
-		);
+	renderMenuRight(context) {
+		if (context.state.changeColor === false) {
+			return (
+				<img
+					onClick={() => context.onChangeColor()}
+					className="isotype-face"
+					src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fface.svg?alt=media&token=06620e07-5dcf-441e-b06a-887782764889"
+					alt="face icon"
+				/>
+			);
+		} else {
+			return (
+				<img
+					onClick={() => context.onChangeColor()}
+					className="isotype-face"
+					src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fhappyface.svg?alt=media&token=00a478d1-2b3a-48e9-81cf-f54f932b8c5d"
+					alt="happyface icon"
+				/>
+			);
+		}
 	}
 
 	render() {
@@ -144,13 +144,10 @@ class Menu extends Component {
 			<MyContext.Consumer>
 				{context => (
 					<Fragment>
-						{console.log(context.state.changeColor)}
 						<div className="">
 							<header className="menu">
 								<div className="row py-2">
-									<div className="col-3 px-2">
-										{this.renderMenuLeft(context)}
-									</div>
+									<div className="col-3 pl-2 pr-0">{this.renderMenuLeft()}</div>
 									<div className="col-6 px-0">
 										{this.renderMenuCenter(
 											work,
@@ -161,7 +158,11 @@ class Menu extends Component {
 										)}
 									</div>
 
-									<div className="col-3 px-0">{this.renderMenuRight()}</div>
+									<div className="col-3 px-2">
+										<div className="float-right">
+											{this.renderMenuRight(context)}
+										</div>
+									</div>
 								</div>
 							</header>
 						</div>

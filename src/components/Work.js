@@ -31,7 +31,7 @@ class Work extends Component {
 						className="row link"
 					>
 						<div className="col-2 p-1">
-							<h3 className="m-0">{pad(15 - index)}.</h3>
+							<h3 className="m-0">{pad(14 - index)}.</h3>
 						</div>
 						<div className="col-md-4 col-sm-6 col-10 p-1">
 							<h3 className="m-0">{name}</h3>
