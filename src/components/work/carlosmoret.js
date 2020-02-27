@@ -141,8 +141,8 @@ class CarlosMoret extends Component {
 					<div className="col-md-6 col-12 px-1">
 						<h5 className="m-0">
 							The logo is a Macintosh computer, the first computer manufactured
-							and sold by Apple in January 1984. The logo that was designed very
-							simply like the iconography, works as a page favicon.
+							and sold by Apple in January 1984. The logo was designed simply,
+							like the iconography and works as a page favicon.
 						</h5>
 						<h5 className="m-0">
 							Both the logo-favicon and the icons are with white backgrond. This
@@ -200,7 +200,7 @@ class CarlosMoret extends Component {
 								/>
 							</svg>
 							<div className="h5 m-0">White</div>
-							<div className="h5 m-0">HEX #FFFFFF</div>
+							<div className="h5 m-0">#FFFFFF</div>
 						</div>
 						<div className="inline-block px-2">
 							<svg height="100" width="100">
@@ -214,7 +214,7 @@ class CarlosMoret extends Component {
 								/>
 							</svg>
 							<div className="h5 m-0">Black</div>
-							<div className="h5 m-0">HEX #0E0E0E</div>
+							<div className="h5 m-0">#0E0E0E</div>
 						</div>
 
 						<h5 className="m-0 pt-5 pb-3">Secundary Colors</h5>
@@ -230,7 +230,7 @@ class CarlosMoret extends Component {
 								/>
 							</svg>
 							<div className="h5 m-0">Grey</div>
-							<div className="h5 m-0">HEX #C4C4C4</div>
+							<div className="h5 m-0">#C4C4C4</div>
 						</div>
 						<div className="inline-block px-2">
 							<svg height="100" width="100">
@@ -243,8 +243,8 @@ class CarlosMoret extends Component {
 									fill="#9bd6fb"
 								/>
 							</svg>
-							<div className="h5 m-0">Grey</div>
-							<div className="h5 m-0">HEX #9bd6fb</div>
+							<div className="h5 m-0">Light Blue</div>
+							<div className="h5 m-0">#9bd6fb</div>
 						</div>
 						<div className="inline-block px-2">
 							<svg height="100" width="100">
@@ -257,8 +257,8 @@ class CarlosMoret extends Component {
 									fill="#fcef9a"
 								/>
 							</svg>
-							<div className="h5 m-0">Grey</div>
-							<div className="h5 m-0">HEX #fcef9a</div>
+							<div className="h5 m-0">Yellew</div>
+							<div className="h5 m-0">#fcef9a</div>
 						</div>
 						<div className="inline-block px-2">
 							<svg height="100" width="100">
@@ -271,8 +271,8 @@ class CarlosMoret extends Component {
 									fill="#f2a3c7"
 								/>
 							</svg>
-							<div className="h5 m-0">Grey</div>
-							<div className="h5 m-0">HEX #f2a3c7</div>
+							<div className="h5 m-0">Pink</div>
+							<div className="h5 m-0">#f2a3c7</div>
 						</div>
 						<div className="inline-block px-2">
 							<svg height="100" width="100">
@@ -285,8 +285,8 @@ class CarlosMoret extends Component {
 									fill="#76be93"
 								/>
 							</svg>
-							<div className="h5 m-0">Grey</div>
-							<div className="h5 m-0">HEX #76be93</div>
+							<div className="h5 m-0">Green</div>
+							<div className="h5 m-0">#76be93</div>
 						</div>
 					</div>
 					<div className="col-12 px-1 pt-5">
@@ -299,8 +299,8 @@ class CarlosMoret extends Component {
 						<h5 className="m-0">Primary Typography: Fira Monospaced</h5>
 						<h5 className="m-0 pt-3">
 							The choice is inspired by the default typography of the Unix
-							Terminal the San Francisco Mono de Apple (SF Mono). But we did not
-							want to give such a crude touch to the content and we wanted to
+							Terminal the San Francisco Mono de Apple (SF Mono). But I did not
+							want to give such a crude touch to the content and I wanted to
 							improve the user's reading, that is why the Fira monospaced
 							typeface was chosen.
 						</h5>
@@ -334,8 +334,8 @@ class CarlosMoret extends Component {
 						<h5 className="m-0 pt-3">
 							The icons were designed to generate curiosity in the user and
 							encourage exploration on the page. There are icons that do not
-							generate a quick recognition, instead they generate an emosion
-							when they are being used.
+							generate a quick recognition, instead they cause an emotion when
+							they are being used.
 						</h5>
 						<h5 className="m-0 pt-3">
 							The icon system was generated with the combination of basic
@@ -546,7 +546,7 @@ class CarlosMoret extends Component {
 							There are three motion elements incorporated into the project:
 						</h5>
 						<h5 className="m-0">
-							1. Happy face icon animation to get attention when browsing
+							1. Happy face icon animation when you click on it
 						</h5>
 						<h5 className="m-0">
 							2. Gradient between four colors in an infinite loop

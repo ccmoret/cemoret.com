@@ -22,22 +22,24 @@ class Work extends Component {
 		function pad(d) {
 			return d < 10 ? "0" + d.toString() : d.toString();
 		}
-		return work.map(({ name, link, description, field }, index) => {
+		return work.map(({ name, link, description, field, year }, index) => {
 			return (
 				<Link to={`${link}`} key={index}>
 					<div
 						onMouseEnter={() => this.changeIndex(index)}
 						// style={{ cursor: `url(${img}) , auto` }}
-						className="row link"
+						className="row pt-1 link"
 					>
-						<div className="col-2 p-1">
-							<h3 className="m-0">{pad(14 - index)}.</h3>
+						<div className="col-md-5 col-sm-8 col-12 p-1">
+							<h3 className="m-0">
+								{pad(14 - index)}. {name}
+							</h3>
 						</div>
-						<div className="col-md-4 col-sm-6 col-10 p-1">
-							<h3 className="m-0">{name}</h3>
-						</div>
-						<div className="col-md-6 col-4 d-none d-sm-block p-1">
+						<div className="col-md-5 col-4 d-none d-sm-block p-1">
 							<h3 className="m-0">{field}</h3>
+						</div>
+						<div className="col-md-2 col-4 d-none d-md-block p-1">
+							<h3 className="m-0">{year}</h3>
 						</div>
 					</div>
 				</Link>
@@ -49,41 +51,12 @@ class Work extends Component {
 		this.setState({ index: index });
 	};
 
-	renderProjectsImages(work) {
-		const { index } = this.state;
-		if (index === null) {
-			return (
-				<div className="row h-100 py-1">
-					<div className="col-12">Hola</div>
-				</div>
-			);
-		} else {
-			return (
-				<div className="row h-100 py-1">
-					<div className="col-6 px-1">
-						<img
-							src={work[index].img1}
-							className="img-onMouseEnter"
-							alt={work[index].name}
-						/>
-					</div>
-					<div className="col-6 px-1">
-						<img
-							src={work[index].img1}
-							className="img-onMouseEnter"
-							alt={work[index].name}
-						/>
-					</div>
-				</div>
-			);
-		}
-	}
-
 	renderList(work) {
 		const { index } = this.state;
 		return (
 			<div
 				style={{
+					height: `100vh`,
 					backgroundColor: `${work[index].backgroundColor}`,
 					color: `${work[index].color} !important`,
 					zIndex: `-100`,
@@ -98,9 +71,6 @@ class Work extends Component {
 						<hr />
 					</div>
 					<div className="col-12 px-2">{this.renderProjectsList(work)}</div>
-					<div className="col-12 d-none d-sm-block px-1">
-						{this.renderProjectsImages(work)}
-					</div>
 				</div>
 				{/* <Footer /> */}
 				<div className="pb-5 d-md-none"></div>
@@ -146,8 +116,8 @@ class Work extends Component {
 		);
 	}
 
-	renderWorks(status, work) {
-		if (status === 0) {
+	renderWorks(status, work, changeWorkView) {
+		if (changeWorkView === false) {
 			return <div>{this.renderList(work)}</div>;
 		} else {
 			return (
@@ -164,7 +134,11 @@ class Work extends Component {
 				{context => (
 					<Fragment>
 						<div>
-							{this.renderWorks(context.state.status, context.state.work)}
+							{this.renderWorks(
+								context.state.status,
+								context.state.work,
+								context.state.changeWorkView
+							)}
 						</div>
 					</Fragment>
 				)}

@@ -6,6 +6,8 @@ class MyProvider extends Component {
 		status: 0,
 		index: 0,
 		changeColor: false,
+		font: `'Fira Mono', monospace`,
+		changeWorkView: false,
 		work: [
 			{
 				name: `Carlos Moret`,
@@ -41,7 +43,7 @@ class MyProvider extends Component {
 				]
 			},
 			{
-				name: `Cafeteria Industrial`,
+				name: `Cafetería Industrial`,
 				feature: 1,
 				link: `/carlosmoret`,
 				field: `Food`,
@@ -80,7 +82,7 @@ class MyProvider extends Component {
 				field: `Technology`,
 				year: `2020`,
 				color: `#fff`,
-				backgroundColor: `#3C00FF`,
+				backgroundColor: `#449cf0`,
 				col: `col-md-6 col-12`,
 				imgcss: `img-work-h`,
 				description: ``,
@@ -112,10 +114,10 @@ class MyProvider extends Component {
 				link: `/carlosmoret`,
 				field: `Technology`,
 				year: `2019`,
-				color: `#000000`,
+				color: `#fff`,
+				backgroundColor: `#a25aff`,
 				col: `col-md-3 col-12`,
 				imgcss: `img-work-v`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/SaMy%2FSaMi3.jpg?alt=media&token=221326b2-ac94-498c-aabb-0c18d614b27b`,
@@ -144,11 +146,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Technology`,
-				year: `2020`,
+				year: `2019`,
 				color: `#000000`,
+				backgroundColor: `#e8e4df`,
 				col: `col-md-3 col-12`,
 				imgcss: `img-work-v`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/suupeer%2Fsuupeercover.jpg?alt=media&token=e564c41f-4fa2-4ca8-bdc2-f617f1db1104`,
@@ -177,11 +179,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Sport`,
-				year: `2020`,
+				year: `2019`,
 				color: `#000000`,
+				backgroundColor: `#10ab59`,
 				col: `col-md-3 col-12`,
 				imgcss: `img-work-v`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/publicfc%2Fpublicfccover.png?alt=media&token=6f9871c7-03d5-4279-b259-fb99b5a23030`,
@@ -210,11 +212,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Music`,
-				year: `2020`,
+				year: `2019`,
 				color: `#000000`,
+				backgroundColor: `#7d1f18`,
 				col: `col-md-6 col-12`,
 				imgcss: `img-work-h`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/a2pass%2Fa2pass.png?alt=media&token=0f55490f-0070-41e8-9873-4c1dd842d67a`,
@@ -243,11 +245,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Migration`,
-				year: `2020`,
+				year: `2019`,
 				color: `#000000`,
+				backgroundColor: `#fcef9a`,
 				col: `col-md-3 col-12`,
 				imgcss: `img-work-v`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/porta%2Fportacover.jpg?alt=media&token=b98c7860-5208-4829-9b38-431b2aea4250`,
@@ -276,11 +278,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Food`,
-				year: `2020`,
+				year: `2018`,
 				color: `#000000`,
+				backgroundColor: `#6c95ff`,
 				col: `col-md-3 col-12`,
 				imgcss: `img-work-v`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/ram%2Framcover.png?alt=media&token=0d5124a0-0e63-40db-8d95-e64d7754c6a3`,
@@ -310,11 +312,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Food`,
-				year: `2020`,
+				year: `2018`,
 				color: `#000000`,
+				backgroundColor: `#173e2c`,
 				col: `col-md-6 col-12`,
 				imgcss: `img-work-h`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/revolver%2Frevolver.jpg?alt=media&token=75e41a8a-f158-4d32-a592-501e8b64b1c6`,
@@ -343,11 +345,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Education`,
-				year: `2020`,
+				year: `2018`,
 				color: `#000000`,
+				backgroundColor: `#0b2fa2`,
 				col: `col-md-3 col-12`,
 				imgcss: `img-work-v`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/hooleap%2Fhooleap.jpg?alt=media&token=01ad9276-eb62-4171-b508-01af7a99bde4`,
@@ -376,11 +378,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Food`,
-				year: `2020`,
+				year: `2017`,
 				color: `#000000`,
+				backgroundColor: `#424242`,
 				col: `col-md-6 col-12`,
 				imgcss: `img-work-h`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/barra%2Fbarra_cover.jpg?alt=media&token=6a4354d9-bd5d-403d-9d1f-5a016b5c4560`,
@@ -409,11 +411,11 @@ class MyProvider extends Component {
 				feature: 0,
 				link: `/carlosmoret`,
 				field: `Food`,
-				year: `2020`,
+				year: `2017`,
 				color: `#000000`,
+				backgroundColor: `#e65245`,
 				col: `col-md-6 col-12`,
 				imgcss: `img-work-h`,
-				backgroundColor: ``,
 				description: ``,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/mercadonun%2Fmercadonun.JPG?alt=media&token=1ea5a8a4-863e-4ec7-8bd5-6bc2e680c151`,
@@ -444,9 +446,9 @@ class MyProvider extends Component {
 				field: `Fashion`,
 				year: `2015`,
 				color: `#000000`,
+				backgroundColor: `#16353b`,
 				col: `col-md-6 col-12`,
 				imgcss: `img-work-h`,
-				backgroundColor: ``,
 				description: `Follow the Forest was a new clothing rental brand back in 2015 that combine the streetwear trend that was starting in Chile.`,
 				team: ``,
 				img1: `https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/followtheforest%2Fftforestcover1.jpg?alt=media&token=1363e688-9b73-46c2-abf4-c46fd8ba7a5d`,
@@ -479,10 +481,25 @@ class MyProvider extends Component {
 		});
 	};
 
+	onChangeWorkView = () => {
+		this.setState({
+			changeWorkView: !this.state.changeWorkView
+		});
+	};
+
+	switchFont = newFont => {
+		this.setState({ font: newFont });
+	};
+
 	render() {
 		return (
 			<MyContext.Provider
-				value={{ state: this.state, onChangeColor: this.onChangeColor }}
+				value={{
+					state: this.state,
+					onChangeColor: this.onChangeColor,
+					onChangeWorkView: this.onChangeWorkView,
+					switchFont: e => this.switchFont(e)
+				}}
 			>
 				{this.props.children}
 			</MyContext.Provider>

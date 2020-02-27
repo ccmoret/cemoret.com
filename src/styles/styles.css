@@ -151,12 +151,13 @@ text-nobrand:hover {
   cursor: pointer;
   width: 35px;
   height: 35px;
-  padding: 0;
+  padding: 0; }
+
+.isotype-happyface {
   animation: spinner 1s; }
 
-.isotype-face {
-  cursor: pointer;
-  animation: spinner 1s; }
+.isotype-nuetralface {
+  animation: spinnerBack 1s; }
 
 .isotype-face-loop {
   width: 100px;
@@ -173,6 +174,16 @@ text-nobrand:hover {
     -moz-transform: rotateY(-360deg);
     -ms-transform: rotateY(-360deg);
     transform: rotateY(-360deg); } }
+
+@keyframes spinnerBack {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  to {
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
 
 .changeColor {
   animation: changeColor 100s infinite; }
@@ -211,6 +222,18 @@ text-nobrand:hover {
   width: 100%;
   height: 10vh;
   background-color: #C4C4C4; }
+
+select {
+  width: 120px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff; }
 
 .pt-80 {
   padding-top: 80px; }
@@ -451,17 +474,6 @@ input[type='text'] {
   background-size: cover !important;
   background-repeat: no-repeat;
   background-size: 100% auto; }
-
-.img-onMouseEnter {
-  top: 70vh;
-  right: 0.25rem;
-  bottom: 0.25rem;
-  width: 100% !important;
-  background-position: center;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  z-index: 10; }
 
 .avatar {
   border-radius: 50%;

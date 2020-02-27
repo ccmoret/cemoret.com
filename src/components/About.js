@@ -36,7 +36,7 @@ class About extends Component {
 					<div className="col-md-9 col-12 px-1 py-1">
 						<h2 className="m-0">
 							Based in Barcelona and working worldwide, I focuses on all phases
-							of a product, from discovery to delivery and iteration, and helps
+							of a product, from discovery to delivery and iteration, helping
 							brands to guide decisions based on user-centered design.
 						</h2>
 					</div>
@@ -44,7 +44,7 @@ class About extends Component {
 						<hr className="pt-5" />
 					</div>
 					<div className="col-md-3 col-6 px-1 pb-5">
-						<h5 className="m-0">Technologies:</h5>
+						<h5 className="m-0 pb-3">Technologies:</h5>
 						<h5 className="m-0">NodeJS</h5>
 						<h5 className="m-0">Express</h5>
 						<h5 className="m-0">MongoDB</h5>
@@ -59,7 +59,7 @@ class About extends Component {
 						<h5 className="m-0">Unix Terminal</h5>
 					</div>
 					<div className="col-md-3 col-6 px-1">
-						<h5 className="m-0">Software:</h5>
+						<h5 className="m-0 pb-3">Software:</h5>
 						<h5 className="m-0">Atom</h5>
 						<h5 className="m-0">Sketch App</h5>
 						<h5 className="m-0">Figma</h5>
@@ -70,7 +70,7 @@ class About extends Component {
 						<h5 className="m-0">Xcode</h5>
 					</div>
 					<div className="col-md-3 col-6 px-1">
-						<h5 className="m-0">Services:</h5>
+						<h5 className="m-0 pb-3">Services:</h5>
 						<h5 className="m-0">Art Direction</h5>
 						<h5 className="m-0">Naming</h5>
 						<h5 className="m-0">Branding</h5>
@@ -81,25 +81,25 @@ class About extends Component {
 						<h5 className="m-0">Photography</h5>
 					</div>
 					<div className="col-md-3 col-6 px-1 d-none d-md-block">
-						<h5 className="m-0">Representation:</h5>
-						<h5 className="m-0 pt-2">Spain</h5>
-						<h5 className="m-0">Belen Newman</h5>
+						<h5 className="m-0 pb-3">Representation:</h5>
+						<h5 className="m-0">Spain</h5>
+						<h5 className="m-0">Belén Newman</h5>
 						<h5 className="m-0">belenewman@gmail.com</h5>
 						<h5 className="m-0">(+34) 634 758 671</h5>
-						<h5 className="m-0 pt-2">France</h5>
+						<h5 className="m-0 pt-3">France</h5>
 						<h5 className="m-0">Tom Fabre</h5>
 						<h5 className="m-0">tomfabre@gmail.com</h5>
 						<h5 className="m-0">(+33) 7 83 83 56 54</h5>
-						<h5 className="m-0 pt-2">US & Canada</h5>
+						<h5 className="m-0 pt-3">US & Canada</h5>
 						<h5 className="m-0">Diego Auvert</h5>
 						<h5 className="m-0">team@proyon.ca</h5>
 						<h5 className="m-0">(+1)(647) 648-2098</h5>
-						<h5 className="m-0 pt-2">Latam</h5>
+						<h5 className="m-0 pt-3">Latam</h5>
 						<h5 className="m-0">Juan Meriches</h5>
 						<h5 className="m-0">jmeriches@gmail.com</h5>
 						<h5 className="m-0">(+56) 9 9997 8007</h5>
-						<h5 className="m-0 pt-4">General Inquiries:</h5>
-						<h5 className="m-0 pt-2">Carlos Moret</h5>
+						<h5 className="m-0 pt-3">General Inquiries</h5>
+						<h5 className="m-0">Carlos Moret</h5>
 						<h5 className="m-0">cemoret@gmail.com</h5>
 					</div>
 				</div>

@@ -175,12 +175,14 @@ text-nobrand:hover {
   width: 35px;
   height: 35px;
   padding: 0;
-  animation: spinner 1s;
+  // animation: spinner 1s;
 }
 
-.isotype-face  {
-  cursor: pointer;
+.isotype-happyface {
   animation: spinner 1s;
+}
+.isotype-nuetralface {
+  animation: spinnerBack 1s;
 }
 
 .isotype-face-loop  {
@@ -189,7 +191,6 @@ text-nobrand:hover {
   padding: 0;
   animation: spinner 2s infinite;
 }
-
 
 @keyframes spinner {
    from {
@@ -203,6 +204,19 @@ text-nobrand:hover {
      transform: rotateY(-360deg);
    }
  }
+
+ @keyframes spinnerBack {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(360deg);
+      -ms-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+    }
+  }
 
  .changeColor {
    animation: changeColor 100s infinite;
@@ -240,6 +254,23 @@ text-nobrand:hover {
   background-color: $grey;
   // border: solid 3px $grey;
   // animation: changeColor 100s infinite;
+}
+
+.custom-select {
+}
+
+select {
+  width: 120px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 2px solid $black;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: $white;
+  // background: url(http://www.stackoverflow.com/favicon.ico) 96% / 15% no-repeat #eee;
 }
 
 .pt-80 {
@@ -540,24 +571,6 @@ input[type='text'] {
   background-size: 100% auto;
 }
 
-.img-onMouseEnter {
-  // position: fixed;
-  top: 70vh;
-  right: 0.25rem;
-  bottom: 0.25rem;
-  width: 100% !important;
-  background-position: center;
-  background-size: cover !important;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  z-index: 10;
-}
-// .img-work-v:hover,
-// .img-work-h:hover {
-//   opacity: 0.3;
-//   filter: alpha(opacity=30);
-// }
-
 .avatar {
   border-radius: 50%;
   width: 32px;
@@ -577,8 +590,6 @@ input[type='text'] {
   height: 32px;
   padding: 0;
 }
-
-
 
 .link-button {
   border: 0 $color-background !important;

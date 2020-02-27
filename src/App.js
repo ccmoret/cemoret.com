@@ -24,6 +24,7 @@ class App extends Component {
 							{context => (
 								<Fragment>
 									<div
+										style={{ fontFamily: `${context.state.font}` }}
 										className={
 											context.state.changeColor ? `changeColor` : `normal`
 										}

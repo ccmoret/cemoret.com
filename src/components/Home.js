@@ -19,7 +19,7 @@ class Home extends Component {
 	renderImages(link, images) {
 		return images.map(({ col, imgcss, image }, index) => {
 			return (
-				<div key={index} className={`${col} p-1 pb-15m`}>
+				<div key={index} className={`${col} p-1`}>
 					<Link to={link}>
 						<div
 							className={imgcss}
@@ -42,7 +42,9 @@ class Home extends Component {
 							<hr />
 						</div>
 						<div className="col-4 px-1 py-1 pb-5">
-							<h5 className="m-0">{name}</h5>
+							<Link to={`${link}`}>
+								<h5 className="m-0 link">{name}</h5>
+							</Link>
 						</div>
 						<div className="col-4 px-1 py-1">
 							<h5 className="m-0">{year}</h5>
@@ -51,6 +53,11 @@ class Home extends Component {
 							<h5 className="m-0">{field}</h5>
 						</div>
 						{this.renderImages(link, images)}
+						<div className="col-12 px-1 py-2 pb-15m">
+							<Link to={`${link}`}>
+								<h5 className="m-0 link-underline">See more / {name}</h5>
+							</Link>
+						</div>
 					</div>
 				);
 			} else {

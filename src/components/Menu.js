@@ -7,7 +7,9 @@ import MyContext from "../MyContext";
 class Menu extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {};
+		this.state = {
+			isotypeClass: `isotype-face`
+		};
 	}
 
 	componentDidMount() {}
@@ -54,34 +56,32 @@ class Menu extends Component {
 		);
 	}
 
-	renderMenuCenter(work, worknumber, back, foward, link) {
+	renderMenuCenter(context, work, worknumber, back, foward, link) {
 		if (work === "" || work == null) {
 			return <span></span>;
 		}
 		if (work === "list") {
 			return (
-				<Link to={link}>
-					<div className="text-center px-2">
-						<img
-							className="isotype"
-							src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fworklist.svg?alt=media&token=3aadb39c-5bfe-4a86-84e2-574d2f7175c0"
-							alt="face icon"
-						/>
-					</div>
-				</Link>
+				<div className="text-center px-2">
+					<img
+						onClick={() => context.onChangeWorkView()}
+						className="isotype-face"
+						src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fworklist.svg?alt=media&token=3aadb39c-5bfe-4a86-84e2-574d2f7175c0"
+						alt="face icon"
+					/>
+				</div>
 			);
 		}
 		if (work === "blocks") {
 			return (
-				<Link to={link}>
-					<div className="text-center px-2">
-						<img
-							className="isotype"
-							src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fworkblocks.svg?alt=media&token=f289cdd9-d329-4668-946f-3332cc756182"
-							alt="face icon"
-						/>
-					</div>
-				</Link>
+				<div className="text-center px-2">
+					<img
+						onClick={() => context.onChangeWorkView()}
+						className="isotype-face"
+						src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fworkblocks.svg?alt=media&token=f289cdd9-d329-4668-946f-3332cc756182"
+						alt="face icon"
+					/>
+				</div>
 			);
 		} else {
 			return (
@@ -115,26 +115,60 @@ class Menu extends Component {
 		);
 	}
 
+	renderChangeColor(context) {
+		context.onChangeColor();
+		if (context.state.changeColor === false) {
+			this.setState({ isotypeClass: `isotype-face isotype-nuetralface` });
+		} else {
+			this.setState({ isotypeClass: `isotype-face isotype-happyface` });
+		}
+	}
+
 	renderMenuRight(context) {
+		const { isotypeClass } = this.state;
 		if (context.state.changeColor === false) {
 			return (
-				<img
-					onClick={() => context.onChangeColor()}
-					className="isotype-face"
-					src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fface.svg?alt=media&token=06620e07-5dcf-441e-b06a-887782764889"
-					alt="face icon"
-				/>
+				<div>
+					<img
+						onClick={() => this.renderChangeColor(context)}
+						className={isotypeClass}
+						src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fface.svg?alt=media&token=06620e07-5dcf-441e-b06a-887782764889"
+						alt="face icon"
+					/>
+					{this.renderSelectFont(context)}
+				</div>
 			);
 		} else {
 			return (
-				<img
-					onClick={() => context.onChangeColor()}
-					className="isotype-face"
-					src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fhappyface.svg?alt=media&token=00a478d1-2b3a-48e9-81cf-f54f932b8c5d"
-					alt="happyface icon"
-				/>
+				<div>
+					<img
+						onClick={() => this.renderChangeColor(context)}
+						className={isotypeClass}
+						src="https://firebasestorage.googleapis.com/v0/b/cemoretdotcom.appspot.com/o/icons%2Fhappyface.svg?alt=media&token=00a478d1-2b3a-48e9-81cf-f54f932b8c5d"
+						alt="happyface icon"
+					/>
+					{this.renderSelectFont(context)}
+				</div>
 			);
 		}
+	}
+
+	renderSelectFont(context) {
+		return (
+			<div className="inline-block">
+				<div className="custom-select">
+					<select
+						onChange={e => context.switchFont(`${e.target.value}`)}
+						className=""
+						id="exampleFormControlSelect1"
+						value={context.state.font}
+					>
+						<option value="Fira Mono">Fira Mono</option>
+						<option value="Helvetica">Helvetica</option>
+					</select>
+				</div>
+			</div>
+		);
 	}
 
 	render() {
@@ -150,6 +184,7 @@ class Menu extends Component {
 									<div className="col-3 pl-2 pr-0">{this.renderMenuLeft()}</div>
 									<div className="col-6 px-0">
 										{this.renderMenuCenter(
+											context,
 											work,
 											worknumber,
 											back,
